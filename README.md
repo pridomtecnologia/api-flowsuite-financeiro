@@ -1,0 +1,1 @@
+template da arquitetura limpa base das aplicações e agilizar o desenvolvimento das apis
