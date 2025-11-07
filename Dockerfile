@@ -9,9 +9,9 @@ RUN pip install --upgrade pip \
 
 COPY . .
 
-EXPOSE 8000
+EXPOSE 9000
 
 # ambiente produção
-# CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
+# CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-9000}"]
 # ambiente de desenvolvimento
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "9000", "--reload"]
